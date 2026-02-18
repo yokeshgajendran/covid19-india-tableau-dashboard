@@ -25,14 +25,11 @@ This dashboard consolidates multiple datasets to provide a unified analytical vi
 ## 📊 Dataset
 
 Source:
--🔗 **Kaggle: COVID-19 in India Dataset:**
+🔗 **Kaggle: COVID-19 in India Dataset:**
 [View Dataset Here](https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-india)
 
--🔗 ** India GIS Map Dataset:**
+🔗 ** India GIS Map Dataset:**
 [Required Map Dataset Here](https://simplemaps.com/gis/country/in)
-- Statewise Testing Details
-- Vaccination Data
-
 
 Key attributes used:
 - Date
