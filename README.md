@@ -6,7 +6,7 @@ This project analyzes the spread, mortality, recovery trends, vaccination progre
 The goal is to provide data-driven insights to support public health decision-making through visual analytics.
 
 🔗 **Live Interactive Dashboard (Tableau Public):**
-[View Dashboard Here](PASTE_YOUR_TABLEAU_LINK_HERE)
+[View Dashboard Here](https://public.tableau.com/shared/2HYGHHQJ4?:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -25,10 +25,13 @@ This dashboard consolidates multiple datasets to provide a unified analytical vi
 ## 📊 Dataset
 
 Source:
-- Kaggle: COVID-19 in India Dataset
+-🔗 **Kaggle: COVID-19 in India Dataset:**
+[View Dataset Here](https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-india)
+-🔗 ** India GIS Map Dataset **
+[Required Map Dataset Here](https://simplemaps.com/gis/country/in)
 - Statewise Testing Details
 - Vaccination Data
-- India GIS Map Dataset (SimpleMaps)
+
 
 Key attributes used:
 - Date
