@@ -101,9 +101,7 @@ The following preprocessing steps were applied:
 
 ## 📷 Dashboard Preview
 
-(Add your screenshots below)
-
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
