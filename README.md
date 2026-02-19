@@ -5,6 +5,8 @@ This project analyzes COVID-19 trends across Indian states, including infection 
 
 The goal is to provide data-driven insights to support public health decision-making through visual analytics.
 
+The dashboard demonstrates how structured visual analytics can transform raw pandemic data into actionable strategic insights.
+
 🔗 **Live Interactive Dashboard (Tableau Public):**
 [View Dashboard Here](https://public.tableau.com/shared/2HYGHHQJ4?:display_count=n&:origin=viz_share_link)
 
