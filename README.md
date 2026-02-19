@@ -1,7 +1,7 @@
 # COVID-19 India Dashboard | Tableau Project
 
 ## 📌 Project Overview
-This project analyzes the spread, mortality, recovery trends, vaccination progress, and testing performance of COVID-19 across Indian states using interactive Tableau dashboards.
+This project analyzes COVID-19 trends across Indian states, including infection growth, mortality and recovery rates, vaccination progress, and state-wise testing volumes and outcomes using interactive Tableau dashboards.
 
 The goal is to provide data-driven insights to support public health decision-making through visual analytics.
 
@@ -45,75 +45,113 @@ Key attributes used:
 
 ## ⚙️ Data Preparation
 
-The following preprocessing steps were applied:
+Following preprocessing was performed to ensure analytical accuracy and consistency across datasets:
 
-- Handling missing values using IFNULL()
-- Data type conversion (numeric measures)
-- Removal of unrealistic values
-- Creation of calculated fields:
-  - Mortality Rate = Deaths / Confirmed Cases
-  - Recovery Rate = Cured Cases / Confirmed Cases
-- Dataset blending for geographic mapping
+- Handled missing values using Tableau’s `IFNULL()` function to avoid distortion in trend calculations.
+- Converted key metrics (Confirmed, Deaths, Cured, First Dose, Second Dose, Testing Counts) into appropriate numeric formats.
+- Removed unrealistic or inconsistent entries to maintain data reliability.
+- Created calculated fields to enhance interpretability:
+  - **Mortality Rate** = Deaths / Confirmed Cases
+  - **Recovery Rate** = Cured Cases / Confirmed Cases
+- Performed dataset blending to integrate:
+  - COVID case data
+  - Vaccination data
+  - Testing data
+  - Geographic GIS mapping dataset
 
----
+These steps ensured data integrity and enabled meaningful cross-state comparisons and time-series analysis.
+
 
 ## 📈 Dashboard Components
 
-### 1️⃣ Dual-Axis Line Chart
-- Tracks confirmed, cured, and death trends
-- Identifies pandemic waves (notable spike in early 2021)
+The dashboard integrates multiple visual elements to provide a comprehensive analytical view of the pandemic.
 
-### 2️⃣ Geographic Map
-- State-wise death intensity visualization
-- Helps identify high-risk regions
+### 1️⃣ Dual-Axis Line Chart – Trend & Wave Analysis
 
-### 3️⃣ Vaccination Progress (Bar Chart)
-- Comparison of First vs Second Dose
-- Highlights vaccination drop-offs
+This visualization tracks Confirmed, Cured, and Death counts over time using a dual-axis structure.
 
-### 4️⃣ Vaccine Type Distribution
-- Covishield vs Covaxin vs Sputnik comparison
+- Identifies infection waves and peak periods
+- Highlights divergence between confirmed and recovered cases
+- Clearly captures the significant surge during early 2021 (second wave)
+- Enables filtering by state and year for localized analysis
 
-### 5️⃣ Testing Performance (Stacked Bar Chart)
-- State-wise Positive vs Negative vs Total Samples
-- Evaluates detection efficiency
+This chart supports temporal trend analysis and outbreak monitoring.
 
 ---
+
+### 2️⃣ Geographic Map – Regional Mortality Distribution
+
+The India map visualizes state-wise death intensity using color gradients.
+
+- Darker regions represent higher mortality concentration
+- Supports rapid identification of high-impact states
+- Integrates mortality rate and total deaths in tooltips for deeper interpretation
+
+This visualization aids in geographic risk assessment and resource allocation planning.
+
+---
+
+### 3️⃣ Vaccination Progress – First vs Second Dose Comparison
+
+A horizontal bar chart comparing first and second dose administration across states.
+
+- Reveals gaps between initial vaccination and full vaccination
+- Identifies potential drop-off patterns
+- Helps assess public participation and awareness effectiveness
+
+This provides insight into vaccination campaign efficiency.
+
+---
+
+### 4️⃣ Vaccine Type Distribution
+
+Compares total doses administered by vaccine type (Covishield, Covaxin, Sputnik).
+
+- Evaluates distribution balance
+- Highlights resource allocation patterns
+- Assesses dependency on specific vaccine types
+
+Supports strategic supply chain and public health evaluation.
+
+---
+
+### 5️⃣ Testing Volume & Outcomes (Stacked Bar Chart)
+
+Displays total samples tested, positive cases, and negative cases state-wise.
+
+- Evaluates testing scale and intensity
+- Assesses detection efficiency
+- Examines correlation between testing expansion and confirmed case spikes
+
+This visualization provides insight into disease detection capability and testing responsiveness.
+
 
 ## 🧠 Key Insights
 
-- Significant spike during the second wave in 2021
-- Maharashtra shows high mortality concentration
-- Gap observed between first and second dose administration
-- Testing expansion correlated with spike detection
+- A significant surge in confirmed and death cases during early 2021 indicates the second pandemic wave across multiple states.
+- Maharashtra shows a disproportionately high mortality concentration compared to several other regions.
+- Noticeable gap between first and second dose administration suggests behavioral, logistical, or awareness challenges.
+- Increased testing volumes correlate with higher detected case counts, indicating improved detection rather than purely increased spread.
+- Recovery rates improved over time, potentially reflecting enhanced treatment protocols and vaccination impact.
 
----
+These insights demonstrate how visual analytics can support data-driven public health decisions.
 
-## 🛠 Tools Used
-
-- Tableau Public
-- Data Blending
-- Calculated Fields
-- Geographic Mapping
-- Interactive Filters & Tooltips
-
----
 
 ## 📷 Dashboard Preview
 
 ![Dashboard](dashboard.png)
 
 ---
+## 🎓 Learning Outcomes
 
-## 🔮 Future Improvements
+Through this project, I developed practical expertise in:
 
-- Integrate real-time data
-- Add predictive modeling for outbreak forecasting
-- Cross-country comparative dashboard
+- Data cleaning and preprocessing within BI environments
+- Creating calculated fields for performance metrics
+- Designing interactive, user-friendly dashboards
+- Implementing geographic visualizations using GIS data blending
+- Transforming raw datasets into decision-support insights
 
----
+The project strengthened my ability to translate complex datasets into intuitive, executive-level visual narratives.
 
-## 👨‍💻 Author
 
-Yokesh Gajendran  
-MSc Data Analytics  
