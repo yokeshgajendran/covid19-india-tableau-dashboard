@@ -12,7 +12,7 @@ The dashboard demonstrates how structured visual analytics can transform raw pan
 
 ---
 
-## 🎯 Business Problem
+## 🎯 Problem Statement
 
 During the COVID-19 pandemic, decision-makers faced challenges in:
 - Monitoring state-wise infection trends
